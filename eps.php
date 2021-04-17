@@ -15,8 +15,7 @@
 					'steven' => 'https://pt.wikipedia.org/wiki/Lista_de_epis%C3%B3dios_de_Steven_Universe',
 					'gravity' => 'https://pt.wikipedia.org/wiki/Lista_de_epis%C3%B3dios_de_Gravity_Falls',
 					'infinity' => 'https://pt.wikipedia.org/wiki/Lista_de_epis%C3%B3dios_de_Infinity_Train',
-					'craig' => 'https://pt.wikipedia.org/wiki/Lista_de_epis%C3%B3dios_de_Craig_of_the_Creek',
-					'default' => '');
+					'craig' => 'https://pt.wikipedia.org/wiki/Lista_de_epis%C3%B3dios_de_Craig_of_the_Creek');
 
 	$dados = file_get_contents($cartoon[$_GET['cartoon']]);
 	$start = explode('<span class="mw-headline" id="'.$s, $dados);

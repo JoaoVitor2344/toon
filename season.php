@@ -3,8 +3,7 @@ $season = array('adventure' => 10,
 				'steven' => 6,
 				'gravity' => 2,
 				'infinity' => 3,
-				'craig' => 3,
-				'default' => 1);
+				'craig' => 3);
 
 $cartoon = $_GET['cartoon'];
 ?>

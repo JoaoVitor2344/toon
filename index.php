@@ -31,7 +31,6 @@
 <body>
 	<div class="cartoons">
 		<?php
-
 		$cartoons = glob('cartoons/*.jpg');
 
 		foreach ($cartoons as $key) 
