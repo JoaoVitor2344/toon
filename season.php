@@ -1,3 +1,14 @@
+<?php 
+$season = array('adventure' => 10,
+				'steven' => 6,
+				'gravity' => 2,
+				'infinity' => 3,
+				'craig' => 3,
+				'default' => 1);
+
+$cartoon = $_GET['cartoon'];
+?>
+
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
@@ -27,16 +38,7 @@
 			margin: 5px;
 		}
 		<?php
-
-		$season = array('adventure' => 10,
-						'steven' => 6,
-						'gravity' => 2,
-						'infinity' => 3,
-						'craig' => 3);
-
-		$cartoon = $season[$_GET['cartoon']];
-
-		if($cartoon <= 6)
+		if($season[$cartoon] <= 6)
 		{
 			echo 
 			'.seasons img{
@@ -52,16 +54,12 @@
 				height: 300px;	
 			}';
 		}
-
 		?>
 	</style>
 </head>
 <body>
 	<div class="seasons">
 		<?php 
-
-		$cartoon = $_GET['cartoon'];
-
 		for($i = 1; $i <= $season[$cartoon]; $i++)
 		{
 			echo

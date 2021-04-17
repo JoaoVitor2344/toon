@@ -6,17 +6,17 @@
 </head>
 <body>
 	<?php
-
 	// set_time_limit(10);
 
-	$c = $_GET['cartoon'];
-	$s = $_GET['season']; // N° da temporada
+	$c = $_GET['cartoon']; // cartoon
+	$s = $_GET['season']; // season
 
 	$cartoon = array('adventure' => 'https://pt.wikipedia.org/wiki/Lista_de_epis%C3%B3dios_de_Adventure_Time',
 					'steven' => 'https://pt.wikipedia.org/wiki/Lista_de_epis%C3%B3dios_de_Steven_Universe',
 					'gravity' => 'https://pt.wikipedia.org/wiki/Lista_de_epis%C3%B3dios_de_Gravity_Falls',
 					'infinity' => 'https://pt.wikipedia.org/wiki/Lista_de_epis%C3%B3dios_de_Infinity_Train',
-					'craig' => 'https://pt.wikipedia.org/wiki/Lista_de_epis%C3%B3dios_de_Craig_of_the_Creek');
+					'craig' => 'https://pt.wikipedia.org/wiki/Lista_de_epis%C3%B3dios_de_Craig_of_the_Creek',
+					'default' => '');
 
 	$dados = file_get_contents($cartoon[$_GET['cartoon']]);
 	$start = explode('<span class="mw-headline" id="'.$s, $dados);
