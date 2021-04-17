@@ -64,7 +64,7 @@ $cartoon = $_GET['cartoon'];
 			echo
 			'<div>
 				<a href="eps.php?cartoon='.$cartoon.'&season='.$i.'">
-					<img src="season/'.$cartoon.'/season'.$i.'.png">
+					<img src="season/'.$cartoon.'/season_'.$i.'.png">
 					<h3>Temporada '.$i.'</h3>
 				</a>
 			</div>';   
