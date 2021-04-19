@@ -11,31 +11,8 @@ $cartoon = $_GET['cartoon'];
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css.css">	
 	<style type="text/css">
-		.seasons{
-			display: flex;
-			flex-wrap: wrap;
-
-			justify-content: center;
-			margin-left: auto;
-			margin-right: auto;
-
-			width: 80vw;
-		}	
-		.seasons div{
-			display: flex;
-			flex-direction: column;
-
-			margin-right: 10px;
-			margin-bottom: 10px;
-			cursor: pointer;
-		}
-		.seasons h3{
-			text-align: center;
-			text-decoration: none;
-			margin: 5px;
-		}
 		<?php
 		if($season[$cartoon] <= 6)
 		{
