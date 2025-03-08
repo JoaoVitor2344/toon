@@ -1,0 +1,13 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#list {
+  transition: all;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+#list:hover {
+  transform: scale(1.05);
+}
